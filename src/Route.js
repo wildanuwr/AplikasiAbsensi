@@ -11,6 +11,8 @@ import CalendarIcon from './assets/CalendarIcon.svg';
 import CameraIcon from './assets/CameraIcon.svg';
 import ReportIcon from './assets/ReportIcon.svg';
 import ProfileIcon from './assets/ProfileIcon.svg';
+import Kalender from './components/Kalender';
+import AbsenScreen from './pages/AbsenScreen';
 
 enableScreens();
 
@@ -33,8 +35,8 @@ const BottomNav = () => {
 
 <Tab.Screen
   name="Kalender"
-  component={DetailScreen}
-   options={{
+  component={Kalender}
+  options={{
     tabBarIcon: ({ color, size }) => (
       <CalendarIcon width={size} height={size} fill={color} />
     ),
@@ -43,7 +45,7 @@ const BottomNav = () => {
 
 <Tab.Screen
   name="Absen"
-  component={DetailScreen}
+  component={AbsenScreen}
   options={{
     tabBarIcon: ({ color, size }) => (
       <CameraIcon width={size} height={size} fill={color} />

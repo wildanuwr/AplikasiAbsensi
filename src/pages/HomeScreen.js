@@ -36,10 +36,22 @@ const HomeScreen = () => {
         </ImageBackground>
       <View style={styles.overlay}>
       <View style={styles.row}>
+      <View>
         <Icon style={styles.icon} name="location-arrow" size={30} color="#191970" />
+        <Text style={styles.iconHead}>Lokasi</Text>
+      </View>
+      <View>
         <Icon style={styles.icon} name="envelope" size={30} color="#191970" />
+        <Text style={styles.iconHead}>Izin</Text>
+      </View>
+      <View>
         <Icon style={styles.icon} name="history" size={30} color="#191970" />
+        <Text style={styles.iconHead}>Histori</Text>
+      </View>
+      <View>
         <Icon style={styles.icon} name="sign-out-alt" size={30} color="#191970" />
+        <Text style={styles.iconHead}>Keluar</Text>
+      </View>
         </View>
       </View>
       <View style={styles.masuk}><Text style={styles.TextAbsen}>10:21:21</Text></View>
@@ -104,7 +116,7 @@ const styles = StyleSheet.create({
     padding: 30, 
     borderRadius: 10, 
     alignItems: 'center',
-    marginTop : -35,
+    marginTop : -50,
     textAlign: 'center', 
     shadowColor: "#000",
     shadowOffset: {
@@ -114,6 +126,10 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.34,
     shadowRadius: 6.27,
     elevation: 10,
+  },
+  iconHead:{
+    textAlign: 'center',
+    justifyContent: 'center',
   },
   row: {
     flexDirection: 'row', // Mengatur ikon dalam satu baris
